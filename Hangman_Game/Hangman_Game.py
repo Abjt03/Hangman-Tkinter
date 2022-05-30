@@ -14,7 +14,6 @@ root.iconbitmap('Hangman_Icon.ico')
 
 word_list = ['vouch', 'glass', 'scrap', 'gamer', 'olive', 'royal', 'natal', 'epoxy', 'india', 'tipsy', 'dodge', 'cynic', 'ultra']
 word_list = [x.upper() for x in word_list]
-print(word_list)
 photos = [PhotoImage(file="images/0th.png"), PhotoImage(file="images/1st.png"), PhotoImage(file="images/2nd.png"), PhotoImage(file="images/3rd.png"), PhotoImage(file="images/4th.png"), PhotoImage(file="images/5th.png"), PhotoImage(file="images/6th.png"), PhotoImage(file="images/7th.png"), PhotoImage(file="images/8th.png"), PhotoImage(file="images/9th.png")]
 k = 0
 
