@@ -55,8 +55,15 @@ def getguess():
             guess_entered = guess_entered.upper()
             word_chosen_list = list(word_chosen)
             if guess_entered in word_chosen_list:
-                word_found = [i if guess_entered == i else '*' for i in word_chosen_list]
-                if word_found == word_chosen:
+                for i in range(len(word_chosen_list)):
+                    if guess_entered == word_chosen_list[i]:
+                        word_found[i] = guess_entered
+                    elif word_found[i] != '*':
+                        pass
+                    else:
+                        word_found[i] = '*'
+                word_str = ''.join(word_found)
+                if word_str == word_chosen:
                     showinfo('Hangman Game Over', 'Congratulations ... You have won !!!')
                     rem_guesses = 0
                     k = 1
