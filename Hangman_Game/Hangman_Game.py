@@ -98,7 +98,6 @@ def getguess():
     guessesLeft.config(text = f'Guesses Left : {rem_guesses}')
     word_str = ''.join(word_found)
     wordLabel.config(text = word_str)
-    # Incomplete
     # Button Command
 
 # Function Call
